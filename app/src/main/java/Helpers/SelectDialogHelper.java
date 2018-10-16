@@ -8,7 +8,7 @@ import com.qmuiteam.qmui.widget.dialog.QMUIBottomSheet;
 import com.qmuiteam.qmui.widget.dialog.QMUIDialog;
 import com.qmuiteam.qmui.widget.dialog.QMUIDialogAction;
 
-import wang.wiseking.eplan.R;
+import com.wisekingtech.eplan.R;
 
 public class SelectDialogHelper{
     private int mCurrentDialogStyle = R.style.QMUI_Dialog;
