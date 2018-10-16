@@ -51,7 +51,7 @@ public class MainActivity extends BaseFragmentActivity {
     private Context context;
     private HomeFragment homeFragment;
     QMUITopBarLayout mTopBar;
-
+    private Button btn2;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -59,7 +59,13 @@ public class MainActivity extends BaseFragmentActivity {
         setContentView(R.layout.activity_main);
         mTopBar = findViewById(R.id.main_topbar);
         mTopBar.setTitle("首页");
-
+        mTopBar.addRightImageButton(R.drawable.qmui_icon_tip_new,R.id.main_topbar)
+                .setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Log.d("tag","点击QQ");
+                    }
+                });
         mTabSegment = findViewById(R.id.tabSegment);
         mContentViewPager = findViewById(R.id.contentViewPager);
        settabs();
