@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.qmuiteam.qmui.widget.textview.QMUILinkTextView
+        android:id="@+id/link_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:gravity="start"
+        android:text=""
+        app:qmui_linkBackgroundColor="@color/s_app_color_gray"
+        app:qmui_linkTextColor="@color/s_app_color_blue_2" />
+</LinearLayout>
+
+
+
+    <!--mLinkTextView.setOnLinkClickListener(mOnLinkClickListener);-->
+    <!--private QMUILinkTextView.OnLinkClickListener mOnLinkClickListener = new QMUILinkTextView.OnLinkClickListener() {-->
+    <!--//识别号码的方法-->
+    <!--@Override-->
+    <!--public void onTelLinkClick(String phoneNumber) {-->
+    <!--Toast.makeText(getContext(), "识别到电话号码是：" + phoneNumber, Toast.LENGTH_SHORT).show();-->
+    <!--}-->
+
+    <!--//识别邮件的方法-->
+    <!--@Override-->
+    <!--public void onMailLinkClick(String mailAddress) {-->
+    <!--Toast.makeText(getContext(), "识别到邮件地址是：" + mailAddress, Toast.LENGTH_SHORT).show();-->
+    <!--}-->
+    <!--//识别网页链接的号码-->
+    <!--@Override-->
+    <!--public void onWebUrlLinkClick(String url) {-->
+    <!--Toast.makeText(getContext(), "识别到网页链接是：" + url, Toast.LENGTH_SHORT).show();-->
+    <!--}-->
+    <!--};-->
+    <!-- -&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;-->
+    <!--作者：qq_33197352-->
+    <!--来源：CSDN-->
+    <!--原文：https://blog.csdn.net/qq_33197352/article/details/77839869?utm_source=copy-->
+    <!--版权声明：本文为博主原创文章，转载请附上博文链接！-->

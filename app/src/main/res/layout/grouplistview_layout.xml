@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?attr/qmui_topbar_height"
+        android:background="@color/qmui_config_color_background">
+
+        <com.qmuiteam.qmui.widget.grouplist.QMUIGroupListView
+            android:id="@+id/groupListView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </ScrollView>
+
+</LinearLayout>
+
+
+    <!--//为QMUIGroupListView创建item项-->
+    <!--QMUICommonListItemView normalItem = mQMUIGroupListView.createItemView("Item 1");//这里的mQMUIGroupListView是xml文件中控件-->
+    <!--normalItem.setOrientation(QMUICommonListItemView.VERTICAL);//设置为垂直模式，默认水平模式-->
+
+    <!--//为QMUIGroupListView创建item项-->
+    <!--QMUICommonListItemView itemWithDetail = mQMUIGroupListView.createItemView("Item 2");-->
+    <!--itemWithDetail.setDetailText("在右方的详细信息");//设置右边详细信息-->
+
+    <!--//为QMUIGroupListView创建item项-->
+    <!--QMUICommonListItemView itemWithDetailBelow = mQMUIGroupListView.createItemView("Item 3");-->
+    <!--itemWithDetailBelow.setOrientation(QMUICommonListItemView.VERTICAL);//设置为垂直模式-->
+    <!--itemWithDetailBelow.setDetailText("在标题下方的详细信息");//在标题下方的详细信息-->
+
+
+    <!--/**-->
+    <!--* 右侧不显示任何东西-->
+    <!--*/-->
+    <!--/** public final static int ACCESSORY_TYPE_NONE = 0;-->
+    <!--* 右侧显示一个箭头-->
+    <!--*/-->
+    <!--//public final static int ACCESSORY_TYPE_CHEVRON = 1;-->
+    <!--/**-->
+    <!--* 右侧显示一个开关-->
+    <!--*/-->
+    <!--// public final static int ACCESSORY_TYPE_SWITCH = 2;-->
+    <!--/**-->
+    <!--* 自定义右侧显示的 View-->
+    <!--*/-->
+    <!--// public final static int ACCESSORY_TYPE_CUSTOM = 3;-->
+    <!--QMUICommonListItemView itemWithChevron = mQMUIGroupListView.createItemView("Item 4");-->
+    <!--itemWithChevron.setAccessoryType(QMUICommonListItemView.ACCESSORY_TYPE_CHEVRON);//右侧显示一个箭头-->
+
+    <!--QMUICommonListItemView itemWithSwitch = mQMUIGroupListView.createItemView("Item 5");-->
+    <!--itemWithSwitch.setAccessoryType(QMUICommonListItemView.ACCESSORY_TYPE_SWITCH);//右侧显示一个开关-->
+    <!--//开关监听-->
+    <!--itemWithSwitch.getSwitch().setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {-->
+    <!--@Override-->
+    <!--public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {-->
+    <!--Toast.makeText(getActivity(), "checked = " + isChecked, Toast.LENGTH_SHORT).show();-->
+    <!--}-->
+    <!--});-->
+
+    <!--QMUICommonListItemView itemWithCustom = mQMUIGroupListView.createItemView("Item 6");-->
+    <!--itemWithCustom.setAccessoryType(QMUICommonListItemView.ACCESSORY_TYPE_CUSTOM); //自定义右侧显示的 View-->
+    <!--QMUILoadingView loadingView = new QMUILoadingView(getActivity());//创建一个loading加载图片-->
+    <!--itemWithCustom.addAccessoryCustomView(loadingView);-->
