@@ -58,7 +58,7 @@ public class MainActivity extends BaseFragmentActivity {
         context = MainActivity.this;
         setContentView(R.layout.activity_main);
         mTopBar = findViewById(R.id.main_topbar);
-        mTopBar.setTitle("首页管理系统000");
+        mTopBar.setTitle("首页管理系统111");
         mTopBar.addRightImageButton(R.drawable.qmui_icon_tip_new,R.id.main_topbar)
                 .setOnClickListener(new View.OnClickListener() {
                     @Override
